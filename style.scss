@@ -73,7 +73,7 @@ body {
             bottom: 0;
             right: 0;
             transition: all ease .5s;
-        
+
             button {
                 border: none;
                 background: none;
@@ -97,17 +97,19 @@ span {
 }
 
 .day {
-    font-size: 40px;
+    font-size: 38px;
 }
 
 .month {
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 5px;
+    font-weight: 500;
 }
 
 .year {
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 5px;
+    font-weight: 500;
 }
 
 .watermark {
@@ -122,6 +124,7 @@ span {
 
 .default {
     font-family: Arial, Helvetica, sans-serif;
+
     & .day {
         font-family: "pretendard", sans-serif;
         font-weight: 700;
@@ -130,9 +133,21 @@ span {
 }
 
 .serif {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: arno-pro-caption, serif;
+
+    & .day {
+        font-family: arno-pro-caption, serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
 }
 
 .mono {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "nitti", monospace;
+    & .day {
+        font-family: "nitti", monospace;
+        font-weight: 700;
+        font-style: normal;
+    }
 }
