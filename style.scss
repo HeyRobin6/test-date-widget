@@ -1,0 +1,138 @@
+body {
+    &.light-mode {
+        background-color: white;
+
+        .widget-container {
+
+            //open
+            button {
+                color: black;
+            }
+
+            span {
+                color: #37352f;
+            }
+
+            &.boxed {
+                background-color: black;
+
+                span {
+                    color: #d4d4d4 !important
+                }
+
+                button {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &.dark-mode {
+        background-color: #191919;
+
+        .widget-container {
+
+            //open
+            button {
+                color: white;
+            }
+
+            span {
+                color: white;
+            }
+
+            &.boxed {
+                background-color: white;
+
+                span {
+                    color: #37352f !important
+                }
+
+                button {
+                    color: #191919;
+                }
+            }
+        }
+    }
+
+}
+
+//--------
+
+.widget-container {
+    width: fit-content;
+    min-width: 250px;
+
+
+    .content-container {
+        position: relative;
+
+        .btn-container {
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transition: all ease .5s;
+        
+            button {
+                border: none;
+                background: none;
+                font-size: 12px;
+            }
+        }
+    }
+
+    &:hover .btn-container {
+        opacity: 1;
+    }
+}
+
+.boxed {
+    border-radius: 10px;
+}
+
+
+span {
+    display: block;
+}
+
+.day {
+    font-size: 40px;
+}
+
+.month {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.year {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.watermark {
+    position: relative;
+    right: 9px;
+    bottom: 30px;
+}
+
+// ---------
+
+//general text classes
+
+.default {
+    font-family: Arial, Helvetica, sans-serif;
+    & .day {
+        font-family: "pretendard", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mono {
+    font-family: 'Courier New', Courier, monospace;
+}
